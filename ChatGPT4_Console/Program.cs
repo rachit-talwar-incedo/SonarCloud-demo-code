@@ -86,7 +86,7 @@ namespace ChatGPT
             Console.WriteLine("Fetching API Response...");
             Console.WriteLine(Environment.NewLine);
             HttpClient client = new HttpClient();
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "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");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "");
 
             var msg = new message() { content = input, role = "user" };
 
