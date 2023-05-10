@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head>  <title>Business Requirements Document (BRD) - [Reverse Engineering using Chat GPT]</title>
+  </head>
+  <body style="padding:20px 80px 0px 80px">
+<p style="text-align:center;"><img src="https://www.incedoinc.com/wp-content/uploads/incedo-logo.png"></p>
+    <h1>Introduction:</h1>
+    <p>The purpose of this document is to outline the business requirements for a sample code using using Chat GPT. The project aims to create a high level and low level BRD document. This document will be used as a reference by the engineering team to ensure that the project is developed in accordance with the business requirements to migrate the existing old code in to a modern microservices architecture.</p> 
+	<h1>Background:</h1>
+    <p>An initiative has been taken on organization level to explore chat gpt for engineering day to day task and identify how it can be utilized in a better way.</p>
+
+    <h1>Scope:</h1>
+    <h3>Extract functional/ business logic from existing code.</h3>    
+    <ul>
+      <li>Attached (TLDashboard.Zip) is a Zip of an existing code that contains the UI and class code.​</li>
+	  <li>This is a legacy code that was written in ASP.Net MVC.​</li>
+	  <li>This specific use of this code was to provide the profile of an Expert/KOL on the UI, while collecting different attributes for the expert in focus from the underlying Data and populating them on the page.​</li>
+    </ul>
+
+    <h1>Constraints:</h1>
+    <ul>
+      <li>Free version of Chat GPT API 4 is not available to use.</li>
+      <li>Free version of Chat GPT API has some restriction to use on the number of request.</li>
+      <li>Chat GPT 3.5 API response time is very high.</li>
+	  <li>Chat GPT 3.5 API has limitation to support max 4096 char in the request.</li>
+	  <li>Provided code files are large and chat GPT is not accepting in one request hence breaked into multiple files.</li>	  
+    </ul>
+<h1>Functional Requirements:</h1>
+<p>
+<ul><li>The IndustryController is a C# code file that contains a class that serves as a controller for the Industry page in the TLDashboard area of the application. It contains two public methods, Index and IndustryActivities, and a private method, IndustryCongress. The Index method retrieves industry interaction information from the database based on the tlId parameter passed to it, and then creates a list of IndustryInteractionsViewModel objects to display on the page. It also retrieves the indStatus and hideStatus from the database and checks if they meet certain conditions to determine where to redirect the user. The IndustryActivities method retrieves information about a specific thought leader based on the tlId parameter, and then creates an IndustryActivitiesViewModel object to display on the page. The IndustryCongress method retrieves congress activity information from the database based on the tlId parameter, and then creates a list of IndustryCongressViewModel objects to display on the page. These methods are used to display information about the industry interactions and activities of thought leaders on the Industry page in the TLDashboard area of the application.</br></br></li><li>The functional requirement output for the provided C# code is to create an executable program which reads the content of files in the specified input folder and its subdirectories, sends the content to an API for processing, receives and displays the processed result of each file in an HTML report. The program should use the HttpClient namespace to make API requests and should have a method named ChatGPTCall which accepts input content, uses the OpenAI API to process it and returns the processed output. The program should also have a method named SaveAsPDF which accepts the output HTML and saves it as a PDF file. The HTML report should contain a header specifying the file path, the processed output and any error messages encountered during processing. The program should be able to handle errors gracefully and continue processing other files.</br></br></li></ul>
+</p>
+
+    <h1>Conclusion:</h1>
+	<P>Chat GPT 3.5 API is able to generate the proper business requirement document, however it is an undeterministic model and give different output for the same input which makes it less reliable. With the help of ChatGPT's output, a technical person can write BRD document in less time.</P>
+    <p>This Business Requirements Document serves as a reference for the project team to ensure that the project is developed in accordance with the business requirements. Any changes to the requirements should be documented and communicated to all stakeholders.</p>
+  </body>
+</html>
